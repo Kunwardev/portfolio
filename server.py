@@ -30,8 +30,12 @@ def my_contacts():
     return render_template('./contact.html')
 
 @app.route('/thankyou.html')
-def test():
+def thank_you():
     return render_template('./thankyou.html')
+
+@app.route('/work.html')
+def work():
+    return render_template('./work.html')
 
 def write_to_file(data):
     with open('./database.txt', mode='a') as database:
